@@ -51,6 +51,8 @@ describe('Cloudtamer Exercise', function () {
 
         // Submit reservation
         mainPage.clickElement(mainPage.confirmBooking);
+
+        cy.wait(5000);
     });
 
     it('Flights Tab 1', function () {
@@ -70,6 +72,8 @@ describe('Cloudtamer Exercise', function () {
 
         // Select  First
         mainPage.selectOption(mainPage.flightTypeSelect, 'First');
+
+        cy.wait(5000);
     });
 
     it('Flights Tab 2', function () {
