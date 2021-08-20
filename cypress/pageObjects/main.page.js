@@ -13,7 +13,9 @@ class Page {
     get activeStartDay() { return 'td.active:nth(0)'; }
     get travelersDropdown() { return 'a.travellers'; }
     get adultsInput() { return '#adults'; }
+    get adultsPlus() { return '.la-plus:nth(1)'; }
     get childrenInput() { return '#childs'; }
+    get childsPlus() { return '.la-plus:nth(3)'; }
     get submitSearch() { return '#submit:contains(Search)'; }
     get firstHotel() { return 'span:contains(Details):nth(0)'; }
     get tripleRoom() { return 'button:contains(Book Now):nth(1)'; }
@@ -33,7 +35,7 @@ class Page {
     // Reusable Methods
     clickElement(el) {
         cy.get(el)
-            .should('be.visible')
+            .scrollIntoView()
             .click({ force: true });
     }
 
