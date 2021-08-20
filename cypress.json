@@ -1,0 +1,20 @@
+{
+	"baseUrl": "https://www.phptravels.net",
+	"chromeWebSecurity": false,
+	"fileServerFolder": "cypress",
+	"integrationFolder": "cypress/integration",
+	"fixturesFolder": "cypress/fixtures",
+	"pluginsFile": "cypress/plugins",
+	"screenshotsFolder": "cypress/screenshots",
+	"supportFile": "cypress/support",
+	"videosFolder": "cypress/videos",
+	"defaultCommandTimeout": 8000,
+	"video": false,
+	"reporter": "junit",
+	"reporterOptions": {
+		"mochaFile": "cypress/results/test-results-[hash].xml",
+		"attachments": true
+	},
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
+}

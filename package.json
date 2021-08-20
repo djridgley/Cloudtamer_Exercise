@@ -1,0 +1,15 @@
+{
+  "name": "cloudtamer_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+	"scripts": {
+		"test": "npm run cypress-test",
+		"cypress-test": "rm cypress/results/* ; npx cypress run --browser chrome --headless"
+	},
+  "author": "David Ridgley",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.0"
+  }
+}
