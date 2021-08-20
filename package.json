@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
 	"scripts": {
-		"test": "npm run cypress-test",
-		"cypress-test": "rm cypress/results/* ; npx cypress run --browser chrome --headless"
+		"test": "npx cypress run --browser chrome --headless"
 	},
   "author": "David Ridgley",
   "license": "ISC",
